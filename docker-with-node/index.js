@@ -3,7 +3,8 @@ const app = express();
 const PORT = 4000;
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  console.log("Hello World");
+  res.send(`Hello World! deployed at ${new Date().toLocaleString()}`);
 });
 
 app.listen(PORT, () => {
